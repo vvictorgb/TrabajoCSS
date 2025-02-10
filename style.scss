@@ -7,20 +7,21 @@ body {
 }
 
 
-// Navbar
+
 .navbar {
     position: fixed;
     width: 100%;
     padding: 15px 30px;
     display: flex;
     align-items: center;
-    justify-content: center; // Centra el contenido base
+    justify-content: center; 
     z-index: 1000;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5); // Línea blanca debajo
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
   
-    // Icono del menú (a la izquierda)
+  
     .menu-icon {
-      position: absolute;
+      position: absolute; 
       left: 30px;
       background-color: rgba(0, 0, 0, 0.3);
       border: 1px solid white;
@@ -28,30 +29,30 @@ body {
       padding: 8px;
       font-size: 1rem;
       cursor: pointer;
-      color: white;
+      color: #D4A373;
       transition: background-color 0.3s ease, color 0.3s ease;
   
       &:hover {
         background-color: rgba(0, 0, 0, 0.5);
-        color: #ddd;
+        color: #ffd700;
       }
     }
   
-    // Título centrado
+ 
     .logo {
       
-      font-family: 'Dancing Script', cursive; // Fuente elegante
+      font-family: 'Dancing Script', cursive; 
       font-size: 2rem;
-      color: white;
+      color: #D4A373;
       text-align: center;
     }
   
-    // Botón de Reservar (a la derecha)
+
     .reservar {
       position: absolute;
       right: 30px;
       font-size: 1.2rem;
-      color: white;
+      color:  #D4A373;
       text-decoration: none;
       transition: color 0.3s ease;
   
@@ -61,7 +62,7 @@ body {
     }
   }
   
-  /* Ajustes para dispositivos móviles */
+ 
   @media (max-width: 768px) {
     .navbar {
       padding: 10px 20px;
@@ -80,7 +81,6 @@ body {
   }
   
 
-// Hero Section
 .hero {
     position: relative;
     height: 100vh;
@@ -90,15 +90,8 @@ body {
     align-items: center;
     text-align: center;
     color: white;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 15vh;
-      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #f8f9fa 100%);
-    }
+    mask-image: linear-gradient(to bottom,white 80%, black); 
+    mask-mode: luminance;
   
     .hero-content {
       position: relative;
@@ -110,6 +103,7 @@ body {
         text-transform: uppercase;
         margin-bottom: 20px;
         transition: transform 0.3s;
+        font-family: 'Dancing Script', cursive;
         
         &:hover {
           transform: scale(1.05);
@@ -119,16 +113,17 @@ body {
       p {
         font-size: 1.2rem;
         margin-bottom: 30px;
+        font-family: 'Dancing Script', cursive;
       }
   
-      // Contenedor para separar los enlaces
+      
       .hero-links {
         display: inline-flex;
-        gap: 20px; /* Espacio entre los enlaces */
+        gap: 20px; 
         justify-content: center;
       }
   
-      // Estilos para los enlaces de Reservar y Ver Restaurantes
+   
       a.hero-link {
         font-family: Georgia, "Times New Roman", Times, serif;
         position: relative;
@@ -139,17 +134,17 @@ body {
         font-weight: bold;
         font-size: 1.1rem;
         color: white;
-        text-decoration: none; /* Quitamos el subrayado predeterminado */
+        text-decoration: none;
         transition: transform 0.3s ease, font-size 0.3s ease, font-family 0.3s ease;
   
-        /* Pseudo-elemento para el underline */
+        
         &::after {
           content: '';
           position: absolute;
           bottom: -5px;
           left: 50%;
           transform: translateX(-50%);
-          width: 30%;          /* Línea pequeña inicial */
+          width: 30%;          
           height: 2px;
           background-color: white;
           transition: width 0.3s ease, left 0.3s ease;
@@ -157,10 +152,10 @@ body {
   
         &:hover {
           
-          font-family: Georgia, "Times New Roman", Times, serif; /* Fuente elegante */
+          font-family: Georgia, "Times New Roman", Times, serif; 
   
           &::after {
-            width: 100%;  /* Línea más larga al hacer hover */
+            width: 100%;  
             left: 0;
             transform: none;
           }
@@ -168,8 +163,69 @@ body {
       }
     }
   }
+  .card{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .card:hover{
+    transform: scale(105%);
+  }
+#nuestroRestaurante{
+  color: burlywood;
+  font-family: 'Dancing Script', cursive;
+}
+.custom-offcanvas {
+  background-color: #2e1b0e; 
+  color: white;
+  width: 250px; 
+
+  .offcanvas-header {
+      border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .menu-links {
+      padding-left: 0;
+
+      li {
+          margin: 15px 0;
+          
+          a {
+              color: #f4e1d2; 
+              text-decoration: none;
+              font-size: 1.2rem;
+              display: block;
+              padding: 10px;
+              transition: color 0.3s ease, transform 0.2s ease;
+              
+              &:hover {
+                  color: #d4a373;
+                  transform: translateX(5px);
+              }
+          }
+      }
+  }
+
+
+  .btn-reserva {
+      display: inline-block;
+      background-color: #e2b024; 
+      color: white;
+      padding: 10px 80px;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+          background-color:#ffc935; 
+          transform: scale(1.05);
+      }
+  }
+}
+ .btn-close {
+            filter: invert(1);
+ }
   
-  // Responsive Design
   @media (max-width: 768px) {
     .hero {
       .hero-content {
@@ -187,84 +243,60 @@ body {
   }
   
   
-// Sección de Restaurantes
-#restaurantes {
-    padding: 50px 0;
-    background-color: #ffffff;
-    
-    h2 {
-      color: #333;
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      text-align: center;
-    }
-    
-    .card {
-      border: none;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin-bottom: 30px;
-      
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      }
-      
-      img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-        
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-      
-      .card-body {
-        padding: 20px;
-        
-        h5 {
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-          color: #222;
-        }
-        
-        .card-text {
-          font-size: 1rem;
-          color: #666;
-        }
-      }
-    }
-  }
+
+
   
-  // Footer Styling
-  footer {
+  
+  .footer {
     background-color: #222;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
-    
+    margin-top: auto;
+  
+    h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+  
     p {
-      margin: 5px 0;
       color: #ccc;
       font-size: 0.9rem;
+      margin: 5px 0;
     }
-    
+  
     a {
       color: #ccc;
+      font-size: 1rem;
       transition: color 0.3s ease;
-      
+  
       &:hover {
         color: #ffd700;
+        text-decoration: none;
       }
+    }
+  
+    .fab, .fas {
+      margin-right: 8px;
+    }
+  
+    hr {
+      border-color: rgba(255, 255, 255, 0.2);
     }
   }
   
-  // Transiciones generales para enlaces
+  
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+ 
   a {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -274,14 +306,15 @@ body {
     }
   }
   
-  // Ajustes Responsivos
+ 
   @media (max-width: 768px) {
-    // Ajuste en sección de Restaurantes
+   
     #restaurantes {
       padding: 30px 0;
       
       h2 {
         font-size: 2rem;
+      
       }
       
       .card {
@@ -289,7 +322,7 @@ body {
       }
     }
     
-    // Ajuste en la sección Hero
+
     .hero {
       .hero-content {
         h1 {
@@ -307,4 +340,22 @@ body {
       }
     }
   }
-  
+  .col-md-4 > .card >img{
+    height: 100%;
+  }
+  .col-md-4 > .card {
+    height: 100%;
+  }
+  #restaurantes .row{
+    margin-top: 30px;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #restaurantes{
+    height: fit-content;
+    width: 90%;
+  }
+  #padding1{
+    padding: 24px;
+  }
