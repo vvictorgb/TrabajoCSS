@@ -341,4 +341,9 @@ body {
 
 .btn-close {
   filter: invert(1);
+}
+
+.material-icons {
+  margin-right: 10px;
+  font-weight: bold;
 }/*# sourceMappingURL=style1.css.map */
