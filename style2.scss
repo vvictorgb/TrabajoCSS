@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center; 
     z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.253);
     border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
     backdrop-filter: blur(5px);
   
@@ -24,6 +25,7 @@ body {
       border-radius: 50%;
       padding: 8px;
       font-size: 1rem;
+     
       cursor: pointer;
       color: #e08d39;
      
@@ -58,6 +60,7 @@ body {
   position: fixed;
   top: 80px;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.253);
   padding: 15px 30px;
   display: flex;
   align-items: center;
