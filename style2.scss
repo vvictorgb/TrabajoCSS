@@ -103,7 +103,7 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('imagenes/BerlinFondo.jpg') no-repeat center center/cover;
+    background: url('imagenes/Bangkok.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,7 @@ body {
     .hero-content {
       position: relative;
       z-index: 2;
-      background-color: rgba(0, 0, 0, 0.8); // Fondo semitransparente para mejorar la legibilidad
+      background-color: rgba(30, 103, 151, 0.8); // Fondo semitransparente para mejorar la legibilidad
       padding: 20px;
       border-radius: 10px;
   
@@ -207,12 +207,8 @@ body {
       color: #ccc;
       font-size: 1rem;
       transition: color 0.3s ease;
-      text-decoration: none;
   
-      &:hover {
-        color: #ffd700;
-        text-decoration: underline;
-      }
+      
     }
   
     .fab, .fas {
@@ -269,13 +265,9 @@ body {
     transition: all 0.3s ease;
     margin: 10px auto;
     width: 40%;
-    background-color: red;
+  background-image: url('imagenes/bangkok.jpeg');
   }
   
-  .restaurant .btn-reserva:hover {
-    background-color: rgb(204, 0, 0);
-    color: #fff;
-  }
   
 
 .innovative-section {
@@ -422,3 +414,118 @@ font-weight: bold;
   #padding1{
     padding: 24px;
   }
+
+  .cultura-tailandesa {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .cultura-tailandesa h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #e08d39;
+    text-transform: uppercase;
+  }
+  
+  .cultura-tailandesa p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .cultura-tailandesa .btn-cultural {
+    background-color: #d4a373;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cultura-tailandesa .btn-cultural:hover {
+    background-color: #ff9428;
+    transform: translateY(-5px);
+  }
+  
+  .cultura-tailandesa img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .cultura-tailandesa .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .cultura-tailandesa img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .descubre-bangkok {
+    position: relative;
+    background-image: url('imagenes/bangkok.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+  
+  .descubre-bangkok .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparencia para mejorar la legibilidad del texto */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .descubre-bangkok h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .descubre-bangkok .descripcion {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  
+  .descubre-bangkok .btn-descubre {
+    background-color:  #d4a373;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .descubre-bangkok .btn-descubre:hover {
+    background-color: #ff9428;
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 768px) {
+    .descubre-bangkok h2 {
+      font-size: 2.5rem;
+    }
+    .descubre-bangkok .descripcion {
+      font-size: 1rem;
+    }
+  }
+  
