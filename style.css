@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -147,7 +148,7 @@ body {
   transform: scale(105%);
 }
 
-#nuestroRestaurante {
+.nuestroRestaurante {
   color: burlywood;
   font-family: "Dancing Script", cursive;
 }
@@ -302,4 +303,115 @@ a:hover {
 
 #padding1 {
   padding: 24px;
+}
+
+.info-restaurante {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.info-restaurante .info-container {
+  width: 70%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background: url("fondoMantel.jpg") no-repeat center center/cover;
+}
+.info-restaurante .info-text {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-restaurante .info-text h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  color: #D4A373;
+  margin-bottom: 15px;
+}
+.info-restaurante .info-text p {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+.info-restaurante .info-carousel {
+  flex: 1;
+  height: 400px; /* Altura fija */
+  overflow: hidden;
+}
+.info-restaurante .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+  -o-object-position: center;
+     object-position: center; /* Mantiene el centro de la imagen visible */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .info-restaurante .info-container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .info-restaurante .info-carousel {
+    height: 250px;
+  }
+  .info-restaurante .info-carousel .carousel-item img {
+    height: 100%;
+    max-height: 250px;
+  }
+}
+.info-text {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.info-text h2 {
+  font-family: "Dancing Script", cursive; /* Fuente elegante */
+  font-size: 2.5rem;
+  color: #8B4513; /* Marrón oscuro elegante */
+  margin-bottom: 15px;
+}
+.info-text p {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  color: #444; /* Texto oscuro para buena legibilidad */
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.info-text .info-description {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.info-text .info-button {
+  display: inline-block;
+  background-color: #8B4513; /* Botón en marrón elegante */
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.info-text .info-button:hover {
+  background-color: #A0522D; /* Un marrón ligeramente más claro o diferente tono para el hover */
+  transform: scale(1.05);
+}
+
+#carouselBerlin {
+  height: 100%;
+}
+
+.cajaCarouse {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
