@@ -443,13 +443,10 @@ font-weight: bold;
     border: none;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-image: url(imagenes/bangkok.jpeg);
   }
   
-  .cultura-tailandesa .btn-cultural:hover {
-    background-color: #ff9428;
-    transform: translateY(-5px);
-  }
+  
   
   .cultura-tailandesa img {
     border-radius: 10px;
