@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirueta - Bienvenido al Viaje</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <button class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">Pirueta</div>
+        <a href="#" class="reservar">Reservar</a>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+        <div class="offcanvas-header" id="padding1">
+            <h5 class="offcanvas-title" id="menuLateralLabel">Pirueta</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled menu-links">
+                <li><a href="#destino1">Berlín</a></li>
+                <li><a href="#destino2">Bangkok</a></li>
+                <li><a href="#destino3">Ciudad del Cabo</a></li>
+            </ul>
+            <div class="text-center mt-4">
+                <a href="#reservar" class="btn btn-reserva">Reservar Ahora</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <header class="hero">
+        <div class="hero-content text-center" style="padding: 50px; border: 2px solid white;">
+          <h1>El Rincón de Berlín</h1>
+          <p>Sabores que cuentan historias</p>
+          <div class="hero-links">
+            <a href="#reservar" class="hero-link">Reservar</a>
+            <a href="#restaurantes" class="hero-link">Ver Carta</a>
+          </div>
+        </div>
+      </header>
+
+      
+<!-- Sección del Restaurante -->
+<section class="restaurant">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Imagen representativa del restaurante -->
+        <div class="col-md-6">
+          <img src="FONDOALEMAN.jpg" alt="Restaurante Alemán" class="img-fluid rounded">
+        </div>
+        <!-- Descripción y características -->
+        <div class="col-md-6" style="text-align: center;">
+          <h2>El Rincón de Berlín</h2>
+          <p>
+            Disfruta de una auténtica experiencia alemana en un ambiente elegante y sofisticado. 
+            Nuestro restaurante fusiona tradición y modernidad para ofrecerte lo mejor de la cocina bávara.
+          </p>
+          <ul class="features">
+            <li>- Ambiente refinado y acogedor</li>
+            <li>- Cocina tradicional alemana</li>
+            <li>- Selección exclusiva de cervezas y vinos</li>
+            <li>- Atención personalizada</li>
+          </ul>
+          <div style="text-align: center;">
+            <a href="#reservar" class="btn btn-reserva" style="margin: 10px auto; width: 40%; background-color: red;">
+              Reservar Ahora
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Sección Especialidades de la Casa -->
+<section class="innovative-section specialties">
+    <div class="container">
+      <h2 class="section-title">Especialidades de la Casa</h2>
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('Berlin.png');"></div>
+          <div class="card-overlay">
+            <h3>Sauerbraten</h3>
+            <p>Asado marinado en especias tradicionales y servido con guarniciones caseras.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('Cabo2.jpg');"></div>
+          <div class="card-overlay">
+            <h3>Weißwurst</h3>
+            <p>Salchichas blancas tradicionales acompañadas de mostaza dulce y un pretzel artesanal.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('descarga.jpg');"></div>
+          <div class="card-overlay">
+            <h3>Käsespätzle</h3>
+            <p>Pasta casera con queso derretido y cebolla frita, la versión bávara del mac and cheese.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Cervezas Artesanales -->
+  <section class="innovative-section beers">
+    <div class="container">
+      <h2 class="section-title">Cervezas Artesanales</h2>
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('cerveza1.jpg');"></div>
+          <div class="card-overlay">
+            <h3>Weizenbier</h3>
+            <p>Cerveza de trigo refrescante con un toque afrutado y especiado.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('cerveza2.jpg');"></div>
+          <div class="card-overlay">
+            <h3>Pilsner</h3>
+            <p>Cerveza dorada, clara y de sabor intenso, perfecta para maridar.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('cerveza3.jpg');"></div>
+          <div class="card-overlay">
+            <h3>Dunkel</h3>
+            <p>Cerveza oscura con matices de caramelo y un final ligeramente amargo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <footer class="footer bg-dark text-light py-4">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <h5>Síguenos</h5>
+              <a href="#" class="text-light mx-2"><i class="fab fa-tiktok"></i> TikTok</a>
+              <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+      
+            <div class="col-md-4 mb-3">
+              <h5>Información</h5>
+              <a href="#" class="text-light d-block">Preguntas Frecuentes</a>
+              <a href="#" class="text-light d-block">Contacto</a>
+            </div>
+      
+         
+            <div class="col-md-4 mb-3">
+              <h5>Contáctanos</h5>
+              <p class="mb-1"><i class="fas fa-envelope"></i> contacto@Pirueta.com</p>
+              <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+            </div>
+          </div>
+      
+          <hr class="bg-light my-3">
+      
+          <p class="mb-0">&copy; 2024 Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

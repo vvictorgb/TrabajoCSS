@@ -1,0 +1,385 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+  
+    .menu-icon {
+      position: absolute; 
+      left: 30px;
+     
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #D4A373;
+     
+  
+      &:hover {
+        color: #ffd700;
+      }
+    }
+  
+    .logo {
+      font-family: 'Dancing Script', cursive; 
+      font-size: 2rem;
+      color: #D4A373;
+      text-align: center;
+    }
+  
+    .reservar {
+      position: absolute;
+      right: 30px;
+      font-size: 1.2rem;
+      color:  #D4A373;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #ffd700;
+      }
+    }
+}
+  
+@media (max-width: 768px) {
+    .navbar {
+      padding: 10px 20px;
+      .menu-icon {
+        left: 15px;
+        font-size: 1.5rem;
+      }
+      .logo {
+        font-size: 1.8rem;
+      }
+      .reservar {
+        right: 15px;
+        font-size: 1rem;
+      }
+    }
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('BerlinFondo.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    mask-image: linear-gradient(to bottom, white 80%, black);
+    mask-mode: luminance;
+  
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.8); // Fondo semitransparente para mejorar la legibilidad
+      padding: 20px;
+      border-radius: 10px;
+  
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+        font-family: 'Dancing Script', cursive;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        font-family: 'Dancing Script', cursive;
+      }
+  
+      .hero-links {
+        display: inline-flex;
+        gap: 20px;
+        justify-content: center;
+      }
+  
+      a.hero-link {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        position: relative;
+        display: inline-block;
+        background: transparent;
+        border: none;
+        padding: 0;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: white;
+        text-decoration: none;
+        transition: transform 0.3s ease, font-size 0.3s ease, font-family 0.3s ease;
+  
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 30%;
+          height: 2px;
+          background-color: white;
+          transition: width 0.3s ease, left 0.3s ease;
+        }
+  
+        &:hover {
+          font-family: Georgia, "Times New Roman", Times, serif;
+  
+          &::after {
+            width: 100%;
+            left: 0;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+  
+
+
+.footer {
+    background-color: #222;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: auto;
+  
+    h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
+  
+    a {
+      color: #ccc;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #ffd700;
+        text-decoration: none;
+      }
+    }
+  
+    .fab, .fas {
+      margin-right: 8px;
+    }
+  
+    hr {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+
+.restaurant {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .restaurant h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .restaurant p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .restaurant .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+  
+  .restaurant .features li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    list-style-type: none;
+  }
+  
+  .restaurant .btn-reserva {
+    background-color: #D4A373;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restaurant .btn-reserva:hover {
+    background-color: #ffd700;
+    color: #fff;
+  }
+  
+
+.innovative-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .innovative-section .section-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+ 
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+
+  .card-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .card-img {
+    transform: scale(1.1);
+  }
+  
+ 
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .card-overlay {
+    transform: translateY(0);
+  }
+  
+  .card-overlay h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-overlay p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .innovative-section {
+      padding: 40px 0;
+    }
+    
+    .innovative-section .section-title {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  .custom-offcanvas {
+    background-color: #2e1b0e; 
+    color: white;
+    width: 250px; 
+  
+    .offcanvas-header {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+}
+
+
+.menu-links {
+    padding-left: 0;
+
+    li {
+        margin: 15px 0;
+        
+        a {
+            color: #f4e1d2; 
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+            padding: 10px;
+            transition: color 0.3s ease, transform 0.2s ease;
+            
+            &:hover {
+                color: #d4a373;
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+
+.btn-reserva {
+    display: inline-block;
+    background-color: #e2b024; 
+    color: white;
+    padding: 10px 80px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color:#ffc935; 
+        transform: scale(1.05);
+    }
+}
+.btn-close {
+          filter: invert(1);
+}
