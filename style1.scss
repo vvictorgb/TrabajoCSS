@@ -64,6 +64,7 @@ body {
         text-decoration: none;
         transition: color 0.3s ease;
         font-weight: bold;
+        font-family: 'Dancing Script', cursive;
     }
 
     .reservar:hover {
@@ -87,6 +88,7 @@ body {
         left: 40px;
         font-weight: bold;
         color: $secondary-color;
+        font-family: 'Dancing Script', cursive;
     }
 
     .volver {
@@ -95,6 +97,7 @@ body {
         font-weight: bold;
         color: $secondary-color;
         text-decoration: none;
+        font-family: 'Dancing Script', cursive;
     }
 
     .volver:hover {
@@ -138,7 +141,8 @@ body {
         background-color: rgba(0, 0, 0, 0.8);
         padding: 20px;
         border-radius: 10px;
-    }
+       
+    } 
 
     h1 {
         font-size: 3rem;
@@ -149,9 +153,7 @@ body {
         font-family: 'Dancing Script', cursive;
     }
 
-    h1:hover {
-        transform: scale(1.05);
-    }
+    
 
     p {
         font-size: 1.2rem;

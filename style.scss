@@ -61,11 +61,12 @@ body {
     .reservar {
       position: absolute;
       right: 30px;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: $primary-color;
       text-decoration: none;
       transition: color 0.3s ease;
       font-weight: bold;
+      font-family: 'Dancing Script', cursive;
 
       &:hover {
         color: $secondary-color;
@@ -115,9 +116,7 @@ body {
         transition: transform 0.3s;
         font-family: 'Dancing Script', cursive;
 
-        &:hover {
-          transform: scale(1.05);
-        }
+      
       }
 
       p {

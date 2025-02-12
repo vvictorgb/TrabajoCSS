@@ -1,4 +1,4 @@
-// Variables de color
+
 $color-principal: #e08d39;
 $color-secundario: #ffd700;
 $color-terciario: #ff9428;
@@ -10,7 +10,7 @@ $color-enlace: #f4e1d2;
 $color-hover-enlace: #d4a373;
 $color-hero-fondo: rgba(30, 103, 151, 0.8);
 
-// Mixin para el flexbox
+
 @mixin flex{
   display: flex;
   justify-content: center;
@@ -65,6 +65,7 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold;
+    font-family: 'Dancing Script', cursive;
 
     &:hover {
       color: $color-secundario;
@@ -88,6 +89,7 @@ body {
     left: 40px;
     font-weight: bold;
     color: $color-terciario;
+    font-family: 'Dancing Script', cursive;
   }
 
   .volver {
@@ -96,6 +98,7 @@ body {
     font-weight: bold;
     color: $color-terciario;
     text-decoration: none;
+    font-family: 'Dancing Script', cursive;
 
     &:hover {
       color: $color-secundario;
@@ -147,10 +150,7 @@ body {
       margin-bottom: 20px;
       transition: transform 0.3s;
       font-family: 'Dancing Script', cursive;
-
-      &:hover {
-        transform: scale(1.05);
-      }
+      
     }
 
     p {

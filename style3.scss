@@ -5,58 +5,78 @@ body{
     background-color: whitesmoke;
 }
 #sidebar {
+  grid-column: 1;
+  height: 100vh;
+  width: 100%;
+ 
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
 
-    grid-column: 1;
-    height: 100vh;
-    width: 100%; 
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
-    
-    div {
-    text-align: center;
-      width: 100%;
+.menu {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem; /* Tamaño base del texto */
+}
+
+.menu:hover {
+  background-color: #34495e;
+}
+
+.menu:first-child {
+  font-size: 1.2rem;
+  margin-top: 0;
+  text-transform: none;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #sidebar {
+      max-width: 200px; /* Reducir el ancho */
       padding: 15px;
-      margin: 10px 0;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      
-      &:hover {
-        background-color: #34495e;
-      }
-  
-      &:first-child {
-        font-size: 1.2em;
-        margin-top: 0;
-        text-transform: none;
-        font-weight: bold;
-        border-bottom: 2px solid white;
-        text-align: center;
-      }
-  
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-    div:not(:first-child) {
-      border-left: 4px solid transparent;
-      padding-left: 20px;
-    }
-  
-    div:hover {
-      border-left-color: #ecf0f1;
-    }
   }
 
+  .menu {
+      font-size: 0.6rem; /* Reducir tamaño de fuente */
+      padding: 12px;
+  }
 
+  .menu:first-child {
+      font-size: 0.8rem;
+  }
+}
 
+@media (max-width: 480px) {
+  #sidebar {
+      max-width: 150px; /* Sidebar más compacto */
+      padding: 10px;
+  }
+
+  .menu {
+      font-size: 0.4rem; /* Texto aún más pequeño */
+      padding: 10px;
+  }
+
+  .menu:first-child {
+      font-size: 0.7rem;
+  }
+}
 
 
 

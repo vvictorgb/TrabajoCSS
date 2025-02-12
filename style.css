@@ -43,11 +43,12 @@ body {
 .navbar .reservar {
   position: absolute;
   right: 30px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #e08d39;
   text-decoration: none;
   transition: color 0.3s ease;
   font-weight: bold;
+  font-family: "Dancing Script", cursive;
 }
 .navbar .reservar:hover {
   color: #ffd700;
@@ -93,9 +94,6 @@ body {
   margin-bottom: 20px;
   transition: transform 0.3s;
   font-family: "Dancing Script", cursive;
-}
-.hero .hero-content h1:hover {
-  transform: scale(1.05);
 }
 .hero .hero-content p {
   font-size: 1.2rem;
