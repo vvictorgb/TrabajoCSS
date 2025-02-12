@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="sidebar">
-        <div class="menu" data-target="Entrantes">🍽️ Menu Premium</div>
+        <div class="menu" id="homeBerlin">🍽️ El Ríncon de Berlín</div>
         <div class="menu active" data-target="Entrantes">🥗 Entrantes</div>
         <div class="menu" data-target="PlatosPrincipales">🍖 Platos Principales</div>
         <div class="menu" data-target="Postres">🍨 Postres Artesanales</div>
@@ -303,33 +303,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Obtén todos los elementos del sidebar
-  const menuItems = document.querySelectorAll('.menu');
-
-  // Función para cambiar la visibilidad de las secciones
-  function showSection(sectionId) {
-    // Ocultar todas las secciones
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-      section.style.display = 'none';
-    });
-
-    // Mostrar la sección seleccionada
-    const targetSection = document.getElementById(sectionId);
-    targetSection.style.display = 'block';
-  }
-
-  // Agregar evento de clic a cada item del menú
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const sectionId = item.getAttribute('data-target');
-      showSection(sectionId);
-    });
-  });
-
-  // Mostrar la sección de "Entrantes" por defecto
-  showSection('Entrantes');
+<script src="menu.js">
 </script>
 </body>
 </html>
