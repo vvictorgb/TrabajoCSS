@@ -1,6 +1,8 @@
 body {
   display: grid;
   grid-template-columns: 20% 80%;
+  overflow: hidden;
+  background-color: whitesmoke;
 }
 
 #sidebar {
@@ -132,4 +134,20 @@ body {
 
 #Entrantes {
   display: block;
+}
+
+#Contenido {
+  overflow-x: hidden;
+}
+#Contenido > div {
+  animation: menu 1s ease;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }/*# sourceMappingURL=style3.css.map */
