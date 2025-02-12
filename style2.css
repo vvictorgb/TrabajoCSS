@@ -9,8 +9,8 @@ body {
   width: 100%;
   padding: 15px 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.253);
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
@@ -21,7 +21,7 @@ body {
   position: absolute;
   left: 30px;
   font-weight: bold;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 50%;
   padding: 8px;
   font-size: 1rem;
@@ -58,8 +58,8 @@ body {
   background-color: rgba(0, 0, 0, 0.253);
   padding: 15px 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   z-index: 1000;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(5px);
@@ -106,9 +106,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  -webkit-mask-image: linear-gradient(to bottom, white 80%, black);
-          mask-image: linear-gradient(to bottom, white 80%, black);
+  color: #fff;
+  -webkit-mask-image: linear-gradient(to bottom, #fff 80%, black);
+          mask-image: linear-gradient(to bottom, #fff 80%, black);
   mask-mode: luminance;
 }
 .hero .hero-content {
@@ -148,7 +148,7 @@ body {
   padding: 0;
   font-weight: bold;
   font-size: 1.1rem;
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: transform 0.3s ease, font-size 0.3s ease, font-family 0.3s ease;
 }
@@ -160,7 +160,7 @@ body {
   transform: translateX(-50%);
   width: 30%;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   transition: width 0.3s ease, left 0.3s ease;
 }
 .hero .hero-content a.hero-link:hover {
@@ -223,7 +223,6 @@ body {
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
-  list-style-type: none;
 }
 
 .restaurant .features li {
@@ -236,7 +235,7 @@ body {
 }
 
 .restaurant .btn-reserva {
-  background-color: #D4A373;
+  background-color: #e08d39;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -327,7 +326,7 @@ body {
 }
 .custom-offcanvas {
   background-color: #2e1b0e;
-  color: white;
+  color: #fff;
   width: 250px;
 }
 .custom-offcanvas .offcanvas-header {
@@ -356,7 +355,7 @@ body {
 .btn-reserva {
   display: inline-block;
   background-color: #e2b024;
-  color: white;
+  color: #fff;
   padding: 10px 80px;
   font-size: 1rem;
   border-radius: 5px;
@@ -403,13 +402,14 @@ body {
 }
 
 .cultura-tailandesa .btn-cultural {
-  background-color: #d4a373;
-  color: white;
+  background-color: #e08d39;
+  color: #fff;
   padding: 12px 30px;
   border: none;
   text-decoration: none;
   font-size: 1.1rem;
   background-image: url(imagenes/bangkok.jpeg);
+  transition: all 0.2s ease-in-out;
 }
 
 .cultura-tailandesa img {
@@ -432,7 +432,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 400px;
-  color: white;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,7 +440,7 @@ body {
 }
 
 .descubre-bangkok .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Transparencia para mejorar la legibilidad del texto */
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   display: flex;
@@ -464,8 +464,8 @@ body {
 }
 
 .descubre-bangkok .btn-descubre {
-  background-color: #d4a373;
-  color: white;
+  background-color: #e08d39;
+  color: #fff;
   padding: 12px 30px;
   border-radius: 50px;
   font-size: 1.1rem;
@@ -486,4 +486,7 @@ body {
   .descubre-bangkok .descripcion {
     font-size: 1rem;
   }
+}
+.btn-cultural:hover {
+  transform: scale(110%);
 }/*# sourceMappingURL=style2.css.map */
