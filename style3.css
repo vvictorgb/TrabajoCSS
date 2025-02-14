@@ -1,4 +1,15 @@
-@charset "UTF-8";
+.menu {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+}
+
 body {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -7,8 +18,10 @@ body {
 }
 
 #sidebar {
+  position: sticky;
+  top: 0;
   grid-column: 1;
-  height: 100vh;
+  height: 1000vh;
   width: 100%;
   background-color: #2c3e50;
   color: #ecf0f1;
@@ -19,18 +32,6 @@ body {
   padding: 20px;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-}
-
-.menu {
-  text-align: center;
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-size: 1rem; /* Tamaño base del texto */
 }
 
 .menu:hover {
@@ -46,31 +47,30 @@ body {
   text-align: center;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   #sidebar {
-    max-width: 200px; /* Reducir el ancho */
-    padding: 15px;
+    max-width: 200px;
+    padding: 12px;
   }
   .menu {
-    font-size: 0.6rem; /* Reducir tamaño de fuente */
+    font-size: 0.6rem;
     padding: 12px;
   }
   .menu:first-child {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 480px) {
   #sidebar {
-    max-width: 150px; /* Sidebar más compacto */
+    max-width: 150px;
     padding: 10px;
   }
   .menu {
-    font-size: 0.4rem; /* Texto aún más pequeño */
+    font-size: 0.4rem;
     padding: 10px;
   }
   .menu:first-child {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 .innovative-section {
@@ -87,12 +87,16 @@ body {
 }
 
 .cards-grid {
+  height: 700px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  overflow-y: auto;
+  margin-bottom: 60px;
 }
 
 .card {
+  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -147,6 +151,9 @@ body {
   .innovative-section {
     padding: 40px 0;
   }
+  .card {
+    margin-bottom: 20px;
+  }
   .innovative-section .section-title {
     font-size: 2rem;
   }
@@ -160,9 +167,14 @@ body {
 }
 
 #Contenido {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 40px;
   overflow-x: hidden;
 }
 #Contenido > div {
+  height: -moz-fit-content;
+  height: fit-content;
   animation: menu 1s ease;
 }
 
@@ -173,4 +185,81 @@ body {
   100% {
     transform: translateX(0%);
   }
+}
+.container {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 30px;
+}
+
+h3 span {
+  margin-left: 10px;
+}
+
+#PlatosPrincipales, #Postres, #Cervezas {
+  display: none;
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(1) > .card-img {
+  background-image: url("imagenes/postre1.png");
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(2) > .card-img {
+  background-image: url("imagenes/postre2.png");
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(3) > .card-img {
+  background-image: url("imagenes/postre3.png");
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(4) > .card-img {
+  background-image: url("imagenes/postre4.png");
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(5) > .card-img {
+  background-image: url("imagenes/postre5.png");
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(6) > .card-img {
+  background-image: url("imagenes/postre6.png");
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(7) > .card-img {
+  background-image: url("imagenes/postre7.png");
+}
+
+#Postres > .specialties > .container > .cards-grid > div:nth-child(8) > .card-img {
+  background-image: url("imagenes/postre8.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(1) > .card-img {
+  background-image: url("imagenes/cerveza1.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(2) > .card-img {
+  background-image: url("imagenes/cerveza2.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(3) > .card-img {
+  background-image: url("imagenes/cerveza3.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(4) > .card-img {
+  background-image: url("imagenes/cerveza4.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(5) > .card-img {
+  background-image: url("imagenes/cerveza5.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(6) > .card-img {
+  background-image: url("imagenes/cerveza6.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(7) > .card-img {
+  background-image: url("imagenes/cerveza7.png");
+}
+
+#Cervezas > .specialties > .container > .cards-grid > div:nth-child(8) > .card-img {
+  background-image: url("imagenes/cerveza8.png");
 }/*# sourceMappingURL=style3.css.map */

@@ -10,19 +10,16 @@ $text-color-light: #ccc;
 $text-color-dark: #333;
 $text-color-gray: #555;
 $hero-bg: url('imagenes/BerlinFondo.jpg') no-repeat center center/cover;
+
+
 @mixin flex{
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-.navbar {
+.plantillaNav{
     position: fixed;
     width: 100%;
     padding: 15px 30px;
@@ -31,7 +28,18 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     background-color: $background-color;
+}
 
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    @extend .plantillaNav;
     .menu-icon {
         position: absolute;
         left: 30px;
@@ -73,19 +81,11 @@ body {
 }
 
 .sub-navbar {
-    position: fixed;
+@extend .plantillaNav;
     top: 80px;
-    width: 100%;
-    padding: 15px 30px;
-    @include flex();
-    z-index: 1000;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    background-color: $background-color;
-
     .name {
         position: absolute;
-        left: 40px;
+        left: 10%;
         font-weight: bold;
         color: $secondary-color;
         font-family: 'Dancing Script', cursive;
@@ -93,7 +93,7 @@ body {
 
     .volver {
         position: absolute;
-        right: 75px;
+        right: 15%;
         font-weight: bold;
         color: $secondary-color;
         text-decoration: none;
@@ -123,6 +123,9 @@ body {
         right: 15px;
         font-size: 1rem;
     }
+    .sub-navbar {
+        top: 65px;
+      }
 }
 
 .hero {
@@ -134,23 +137,26 @@ body {
     color: white;
     mask-image: linear-gradient(to bottom, white 80%, black);
     mask-mode: luminance;
+   
 
     .hero-content {
         position: relative;
         z-index: 2;
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 20px;
         border-radius: 10px;
+        padding: 30px;
+        border: 2px solid white;
        
     } 
 
     h1 {
         font-size: 3rem;
-        font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 20px;
         transition: transform 0.3s;
-        font-family: 'Dancing Script', cursive;
+        font-family: "Pacifico", serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     
@@ -203,6 +209,22 @@ body {
         transform: none;
     }
 }
+
+ .ajuste1{
+    margin-left: 10px;
+ } 
+
+@media(max-width:650px){
+    .hero-content h1{
+        font-size:1.1rem !important;
+    }
+  }
+  
+  @media(max-width:460px){
+    .hero-content h1{
+        font-size:1rem !important;
+    }
+  } 
 .footer {
   background-color: $footer-bg-color;
   padding: 30px 0;
@@ -422,3 +444,4 @@ body {
 #padding1 {
   padding: 24px;
 }
+
